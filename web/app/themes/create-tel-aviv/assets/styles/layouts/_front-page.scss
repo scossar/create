@@ -4,3 +4,15 @@
   background-size: cover;
   position: relative;
 }
+
+.scroll-top img {
+  position: absolute;
+  width: 7vw;
+  bottom: -3.5vw;
+  left: 0;
+  right: 0;
+  margin: auto;
+  &:hover {
+    cursor: pointer;
+  }
+}
