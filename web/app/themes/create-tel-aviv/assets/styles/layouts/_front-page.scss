@@ -5,6 +5,10 @@
   position: relative;
 }
 
+.scroll-top {
+  @include clearfix;
+}
+
 .scroll-top img {
   position: absolute;
   width: 7vw;
@@ -15,4 +19,9 @@
   &:hover {
     cursor: pointer;
   }
+}
+
+#bridging {
+  height: 100%;
+  background: pink;
 }
