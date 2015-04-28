@@ -4,4 +4,18 @@ $main-sm-columns:       $grid-columns;
 $sidebar-sm-columns:    4;
 
 // Colors
-$krand-primary:         #27ae60;
+$brand-primary:         #131d3c;
+$brand-secondary: #e25e60;
+$inverse-color: #ffffff;
+
+// Fonts
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
+
+$base-font-size: 16px;
+
+$font-size-h1: floor($base-font-size * 3.9);
+$font-size-h2: floor($base-font-size * 2.2);
+$font-size-h3: floor($base-font-size * 1.5);
+
+$font-family-base: 'Open Sans Hebrew', sans-serif;
+
