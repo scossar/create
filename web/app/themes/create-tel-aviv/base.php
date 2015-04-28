@@ -2,7 +2,6 @@
 
 use Roots\Sage\Config;
 use Roots\Sage\Wrapper;
-
 ?>
 
 <?php get_template_part('templates/head'); ?>
