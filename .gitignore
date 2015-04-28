@@ -1,5 +1,9 @@
 # Application
 web/app/plugins/*
+!web/app/plugins/advanced-custom-fields-pro/
+!web/app/plugins/wp-migrate-db-pro/
+!web/app/plugins/gravityforms/
+!web/app/plugins/testeleven-positioned/
 !web/app/plugins/.gitkeep
 web/app/mu-plugins/*
 !web/app/mu-plugins/.gitkeep
