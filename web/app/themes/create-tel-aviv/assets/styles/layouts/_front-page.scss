@@ -23,9 +23,18 @@
 }
 
 // A temporary fix for lack of content.
-#bridging {
-  height: 100%;
-  background: pink;
+.bridging {
+  background: $brand-primary;
+  color: $inverse-color;
+  padding-top: rhythm(3);
+  h2 {
+    font-size: $font-size-h1;
+    text-align: center;
+  }
+  article {
+    @include make-sm-column(10);
+    @include make-sm-column-offset(1);
+  }
 }
 
 // Splash section
@@ -42,4 +51,11 @@
 
 .hero h1 {
   font-weight: bold;
+}
+
+.hero .sign-up-individual img,
+.hero .sign-up-startup img {
+//  background: transparent;
+  height: 100px;
+  width: 300px;
 }
