@@ -12,11 +12,13 @@ use Roots\Sage\Wrapper;
       </div>
     <![endif]-->
     <section id="hero">
+      <?php
+      do_action('get_header');
+      get_template_part('templates/header');
+      ?>
       <div class="wrap container">
         <div class="row">
           <?php
-          do_action('get_header');
-          get_template_part('templates/header');
           get_template_part('templates/front-page', 'hero');
           ?>
         </div>

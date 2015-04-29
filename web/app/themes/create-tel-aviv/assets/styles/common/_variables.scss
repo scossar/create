@@ -1,5 +1,6 @@
 // Grid settings
 $grid-columns: 12;
+$grid-gutter-width: 30px;
 $main-sm-columns:       $grid-columns;
 $sidebar-sm-columns:    4;
 
@@ -11,11 +12,55 @@ $inverse-color: #ffffff;
 // Fonts
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
 
-$base-font-size: 16px;
+$font-size-base: 16px;
 
-$font-size-h1: floor($base-font-size * 3.9);
-$font-size-h2: floor($base-font-size * 2.2);
-$font-size-h3: floor($base-font-size * 1.5);
+$font-size-h1: floor($font-size-base * 3.9);
+$font-size-h2: floor($font-size-base * 2.2);
+$font-size-h3: floor($font-size-base * 1.5);
 
 $font-family-base: 'Open Sans Hebrew', sans-serif;
 
+// Vertical rhythm
+$line-height-base: 1.428571429;
+$line-height-computed: floor($font-size-base * $line-height-base);
+$rhythm: $line-height-computed;
+$half-rhythm: floor($rhythm / 2);
+$quarter-rhythm: floor($rhythm / 4);
+
+@function rhythm($lines: 1) {
+  @return floor($rhythm * $lines);
+}
+
+// Borders
+$border-radius-base: 4px;
+
+// Navbar
+$navbar-height:                    50px;
+$navbar-margin-bottom:             $line-height-computed;
+$navbar-border-radius:             $border-radius-base;
+$navbar-padding-horizontal:        floor(($grid-gutter-width / 2));
+$navbar-padding-vertical:          4px;
+$navbar-collapse-max-height:       340px;
+
+$navbar-default-color:             $inverse-color;
+$navbar-default-bg:                $brand-primary;
+$navbar-default-border:            darken($navbar-default-bg, 6.5%);
+
+// Navbar links
+$navbar-default-link-color:                $inverse-color;
+$navbar-default-link-hover-color:          $brand-secondary;
+$navbar-default-link-hover-bg:             transparent;
+$navbar-default-link-active-color:         $brand-secondary;
+$navbar-default-link-active-bg:            transparent;
+$navbar-default-link-disabled-color:       #ccc;
+$navbar-default-link-disabled-bg:          transparent;
+
+// Navbar brand label
+$navbar-default-brand-color:               $navbar-default-link-color;
+$navbar-default-brand-hover-color:         darken($navbar-default-brand-color, 10%);
+$navbar-default-brand-hover-bg:            transparent;
+
+// Navbar toggle
+$navbar-default-toggle-hover-bg:           #ddd;
+$navbar-default-toggle-icon-bar-bg:        #888;
+$navbar-default-toggle-border-color:       #ddd;

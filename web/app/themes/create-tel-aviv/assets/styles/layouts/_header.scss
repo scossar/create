@@ -1,4 +1,44 @@
 .banner {
-  position: fixed;
-  top: 0;
+//  position: fixed;
+//  top: 0;
+}
+
+.navbar-brand img {
+  height: 100%;
+}
+
+.share-icon {
+  @include clearfix;
+  display: inline-block;
+  height: 50px;
+  margin: 4px;
+  padding: 4px;
+  float: right;
+  &:hover {
+    cursor: pointer;
+  }
+}
+.share-icon img {
+  height: 100%;
+}
+
+.navbar .navbar-nav li {
+  font-size: 24px;
+  padding: 13px $rhythm 11px $rhythm;
+}
+
+.navbar-nav li a {
+  text-transform: uppercase;
+  padding-right: 0;
+  padding-left: 0;
+  border-bottom: 2px solid $brand-primary;
+  &:hover {
+    color: $brand-secondary;
+    border-color: $brand-secondary;
+  }
+}
+
+.navbar-nav .active a{
+  color: $brand-secondary;
+  border-color: $brand-secondary;
 }
