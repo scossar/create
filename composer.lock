@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "9a3f8502b60f7b69656ce951259cf427",
+    "hash": "54b0b2709b3aaae76fbb5d89dcb5527a",
     "packages": [
         {
             "name": "composer/installers",
@@ -275,6 +275,26 @@
                 "environment"
             ],
             "time": "2014-10-16 14:50:21"
+        },
+        {
+            "name": "wpackagist-plugin/password-protected",
+            "version": "2.0",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/password-protected/",
+                "reference": "tags/2.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/password-protected.2.0.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/password-protected/"
         },
         {
             "name": "wpackagist-plugin/svg-support",
