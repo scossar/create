@@ -1,3 +1,4 @@
+// Set up full-height splash page.
 #hero {
   height: 100%;
   background: url('../images/tlv-picture.png') no-repeat;
@@ -21,7 +22,20 @@
   }
 }
 
+// A temporary fix for lack of content.
 #bridging {
   height: 100%;
   background: pink;
+}
+
+// Splash section
+.hero {
+  color: $inverse-color;
+  font-size: $font-size-base * 2.2;
+}
+
+.hero .callout-box {
+  background: transparentize($brand-primary, 0.2);
+  text-align: center;
+  padding: rhythm(2.5) rhythm(1.75);
 }
