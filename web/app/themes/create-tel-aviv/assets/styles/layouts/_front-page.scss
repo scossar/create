@@ -49,6 +49,7 @@
 }
 
 .hero .callout-box {
+  margin-top: rhythm(1.25);
   background: transparentize($brand-primary, 0.2);
   text-align: center;
   padding: rhythm(2.5) rhythm(1.75);
@@ -96,7 +97,71 @@
     @include make-sm-column(4);
     text-align: center;
     img {
-      width: 33%;
+      width: 50%;
+    }
+  }
+}
+
+.sign {
+  background: $brand-primary;
+  color: $inverse-color;
+  padding-top: rhythm(2.5);
+  padding-bottom: rhythm(2.5);
+  .individual {
+    @include make-sm-column(6);
+    button {
+      float: right;
+    }
+  }
+  .startup {
+    @include make-sm-column(6);
+    button {
+      float: left;
+    }
+  }
+}
+
+.contact {
+  background: $brand-secondary;
+  color: $inverse-color;
+  h2 {
+    font-size: $font-size-h1;
+    font-weight: bold;
+    text-align: center;
+  }
+  form {
+    width: 33%;
+    margin-left: 33%;
+    ul {
+      padding-left: 0;
+      list-style: none;
+      }
+    label {
+      display: none;
+    }
+    input,
+    textarea {
+      width: 100%;
+      margin-bottom: rhythm(1);
+      background: $brand-secondary;
+      border: 2px solid $inverse-color;
+      padding: $quarter-rhythm;
+      ::-webkit-input-placeholder {
+        color: $inverse-color;
+      }
+
+      :-moz-placeholder { /* Firefox 18- */
+        color: $inverse-color;
+      }
+
+      ::-moz-placeholder {  /* Firefox 19+ */
+        color: $inverse-color;
+      }
+
+      :-ms-input-placeholder {
+        color: $inverse-color;
+      }
+
     }
   }
 }
