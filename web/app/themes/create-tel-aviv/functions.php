@@ -22,6 +22,7 @@ $sage_includes = [
   'lib/extras.php',                // Custom functions
   'lib/positioned-content.php',
   'lib/uploads.php',
+  'lib/preview.php',
 ];
 
 foreach ($sage_includes as $file) {

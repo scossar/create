@@ -67,7 +67,36 @@
 
 .partners {
   height: 100%;
-  background: url('../images/tlv-picture.png') no-repeat;
+  background: url('../images/boat-pic.png') no-repeat;
   background-size: cover;
   position: relative;
+  h2 {
+    font-size: $font-size-h1;
+    color: $text-color;
+    text-align: center;
+    @include make-sm-column(12);
+  }
+  img {
+    @include make-sm-column(4);
+    width: auto;
+    height: 200px;
+    padding: 50px;
+  }
+}
+
+.focus {
+  background: $brand-secondary;
+  color: $brand-primary;
+  h2 {
+    @include make-sm-column(12);
+    text-align: center;
+    font-size: $font-size-h1;
+  }
+  article {
+    @include make-sm-column(4);
+    text-align: center;
+    img {
+      width: 33%;
+    }
+  }
 }
