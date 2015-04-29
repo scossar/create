@@ -1,0 +1,14 @@
+.editable {
+  position: relative;
+  .edit-post {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    a {
+      font-size: $font-size-base;
+      @extend .btn;
+      @extend .btn-warning;
+    }
+  }
+}
