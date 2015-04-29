@@ -46,7 +46,6 @@
     "johnpbloch/wordpress": "4.2.1",
     "wpackagist-plugin/svg-support": "~2.1",
     "roots/soil": "3.3.0",
-    "wpackagist-plugin/password-protected": "~2.0"
   },
   "extra": {
     "installer-paths": {
