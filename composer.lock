@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "952d855eea651bbba30decaf1f10840e",
+    "hash": "9a3f8502b60f7b69656ce951259cf427",
     "packages": [
         {
             "name": "composer/installers",
@@ -184,6 +184,48 @@
             "time": "2013-09-09 15:04:54"
         },
         {
+            "name": "roots/soil",
+            "version": "3.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/roots/soil.git",
+                "reference": "ed8ba0448f9e49f3bdcdf4525505e231d1ae3571"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/roots/soil/zipball/ed8ba0448f9e49f3bdcdf4525505e231d1ae3571",
+                "reference": "ed8ba0448f9e49f3bdcdf4525505e231d1ae3571",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "~1.0",
+                "php": ">=5.4.0"
+            },
+            "type": "wordpress-plugin",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Scott Walkinshaw",
+                    "email": "scott.walkinshaw@gmail.com",
+                    "homepage": "https://github.com/swalkinshaw"
+                },
+                {
+                    "name": "Ben Word",
+                    "email": "ben@benword.com",
+                    "homepage": "https://github.com/retlehs"
+                }
+            ],
+            "description": "Clean up WordPress markup, relative URLs, nice search",
+            "homepage": "https://roots.io/plugins/soil/",
+            "keywords": [
+                "wordpress"
+            ],
+            "time": "2015-04-22 16:14:17"
+        },
+        {
             "name": "vlucas/phpdotenv",
             "version": "v1.0.9",
             "source": {
@@ -233,6 +275,26 @@
                 "environment"
             ],
             "time": "2014-10-16 14:50:21"
+        },
+        {
+            "name": "wpackagist-plugin/svg-support",
+            "version": "2.1.7",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/svg-support/",
+                "reference": "tags/2.1.7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/svg-support.2.1.7.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/svg-support/"
         }
     ],
     "packages-dev": [],
@@ -240,6 +302,7 @@
     "minimum-stability": "stable",
     "stability-flags": [],
     "prefer-stable": false,
+    "prefer-lowest": false,
     "platform": {
         "php": ">=5.4"
     },

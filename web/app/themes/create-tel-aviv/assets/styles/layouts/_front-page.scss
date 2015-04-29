@@ -27,6 +27,7 @@
   background: $brand-primary;
   color: $inverse-color;
   padding-top: rhythm(3);
+  padding-bottom: rhythm(3);
   h2 {
     font-size: $font-size-h1;
     text-align: center;
@@ -34,6 +35,10 @@
   article {
     @include make-sm-column(10);
     @include make-sm-column-offset(1);
+  }
+  img {
+    width: 33%;
+    margin-left: 33%;
   }
 }
 
@@ -58,4 +63,11 @@
 //  background: transparent;
   height: 100px;
   width: 300px;
+}
+
+.partners {
+  height: 100%;
+  background: url('../images/tlv-picture.png') no-repeat;
+  background-size: cover;
+  position: relative;
 }

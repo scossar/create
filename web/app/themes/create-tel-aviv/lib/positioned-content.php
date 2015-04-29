@@ -12,3 +12,7 @@ $plugin->create_positioned_post($creator, 'positioned_full', $come_build_the_fut
 // Bridging section posts
 $bridging_the_gap = new \Position('bridging-the-gap', 'front-page.php');
 $plugin->create_positioned_post($creator, 'positioned_full', $bridging_the_gap);
+
+// Partners posts
+$partners = new \Position('partners', 'front-page.php');
+$plugin->create_positioned_post($creator, 'positioned_full', $partners);
